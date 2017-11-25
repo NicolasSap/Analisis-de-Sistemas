@@ -1,0 +1,31 @@
+Flujo Normal:
+1-El visitante selecciona registrar cliente.
+2-El sistema carga la fecha.
+3-El visitante ingresa nombre, apellido, email, contraseña, dni, celular,
+dirección, y fecha de nacimiento(dia, mes, año), luego elige una forma de pago,
+e ingresa los datos necesarios para esa forma de pago.
+4-El visitante oprime aceptar.
+5-El sistema registra el cliente y muestra id cliente y estado del mismo.
+
+Flujos Alternativos:
+
+	-Distintas Formas de Pago:
+	3.1.1 Selecciona Tarjeta de Crédito, con lo cual se habilitarán los 
+campos Número de Tarjeta, Nombre Propietario y Fecha de Vencimiento (mes, año).
+	3.1.2 Selecciona Mercado Pago, con lo cual se habilitarán los campos 
+Mail y Contraseña (son los datos de su cuenta en Mercado Pago).
+	3.1.3 Selecciona PayPal, con lo cual se habilitarán los campos Mail y 
+Contraseña (son los datos de su cuenta de PayPal).
+
+	-Presiona Aceptar y los Datos son Erroneos:
+	5.1.1 El email ingresado ya se encuentra en uso, o no es valido, pide 
+reingresar email.
+	5.1.2 El sistema de tarjetas de crédito informa que la
+ Tarjeta de Crédito ingresada es invalida, pide reingresar forma de pago.
+	5.1.3 El sistema de Mercado Pago informa que los datos de la cuenta 
+ingresada son erroneos, pide reingresar forma de pago.
+	5.1.4 El sistema de Paypal informa que los datos de la cuenta 
+ingresados son erroneos, pide reingresar forma de pago.
+
+	-Oprime Cancelar:
+	4.1 El visitante oprime cancelar y finaliza el caso de uso.
